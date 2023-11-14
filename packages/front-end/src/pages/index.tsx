@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Head from 'next/head';
 import {Inter} from '@next/font/google';
 import {GetServerSidePropsContext} from 'next';
+import Login from './Login';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -71,6 +72,7 @@ export default function Home({
         <div className="p-4">
           <p className="text-neutral-500">{`How ya goin, ${sess?.displayName || sess?.username || 'stranger'}?`}</p>
         </div>
+        
       </main>
     </>
   );
